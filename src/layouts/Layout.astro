@@ -22,14 +22,23 @@ const { title } = Astro.props;
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
-  <body class="bg-gray-900 py-20">
+  <body class="bg-gray-900 py-20 overflow-x-hidden">
     <!-- <Header /> -->
     <main>
       <div class="container mx-auto px-8">
         <slot />
       </div>
     </main>
+
+    <script is:inline src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script is:inline>
+      AOS.init();
+    </script>
+
   </body>
 </html>
 
