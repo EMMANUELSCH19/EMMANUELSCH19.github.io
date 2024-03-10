@@ -1,0 +1,82 @@
+---
+import Layout from "../../layouts/Layout.astro";
+---
+
+<Layout title="landing Page | Portafolio Web">
+  <div class="mt-10 grid gap-5">
+    <section class="flex flex-col lg:flex-row gap-5">
+      <div class="basis-full lg:basis-1/2 flex flex-col justify-center items-center text-center bg-slate-800 p-4 rounded-lg">
+        <h1>
+          <div class="text-xl lg:text-2xl text-slate-400">Nombre del Proyecto:</div>
+          <div class="text-2xl lg:text-4xl font-bold text-green-400 mt-2">
+            Landing Page
+          </div>
+        </h1>
+
+        <div class="text-base lg:text-lg mt-4 flex flex-col md:flex-row">
+          <span class="text-slate-400 me-2"> Empresa:</span>
+          <span class="text-slate-300 font-semibold mt-2 md:mt-0">Soluciones Exa</span>
+        </div>
+
+        <div class="mt-4 text-base lg:text-lg flex flex-col md:flex-row">
+          <span class="text-slate-400 me-2"> Enlaces:</span>
+          <a
+            class="text-sm text-slate-300 font-semibold bg-slate-600 px-2 py-1 rounded-full mt-2 md:mt-0"
+          >
+            No disponible
+          </a>
+        </div>
+
+        <div class="mt-4 flex flex-col">
+          <span class="text-slate-400"> Tecnologías:</span>
+          <div class="flex flex-wrap gap-3 justify-center mt-3">
+            <div class="bg-orange-500/15 rounded text-orange-400 p-0.5 px-1 font-bold text-xs">
+                HTML
+            </div>
+            <div class="bg-blue-500/15 rounded text-blue-400 p-0.5 px-1 font-bold text-xs">
+                CSS
+            </div>
+            <div class="bg-yellow-500/15 rounded text-yellow-400 p-0.5 px-1 font-bold text-xs">
+                Javascript
+            </div>
+            <div class="bg-purple-500/15 rounded text-purple-400 p-0.5 px-1 font-bold text-xs">
+                Bootstrap
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="basis-full lg:basis-1/2">
+        <video
+        src="/projects/landing-exa/video.mp4"
+        poster="/projects/landing-exa/poster.jpg"
+        autoplay
+        loop
+        muted
+        playsinline
+        preload="metadata"
+        title="Reproductor de Música"
+        class="rounded object-cover h-full"></video>
+
+      </div>
+    </section>
+
+    <section class="px-5 md:px-10 py-5 bg-slate-800 p-4 rounded-lg">
+        <div class="text-xl md:text-2xl font-bold text-slate-400">
+            Descripción del proyecto
+        </div>
+        <div class="md:text-xl mt-4 leading-7 md:leading-8">
+            Se desarrolló una landing page para la empresa Soluciones Exa, la cual cuenta con:
+            <ul class="list-disc list-inside mt-2">
+                <li>Información sobre el evento.</li>
+                <li>Formulario de registro.</li>
+                <li>Información de contacto.</li>
+                <li>Animaciones con la libreria AOS.</li>
+                <li>Animaciones de CSS.</li>
+                <li>Responsive Design.</li>
+                <li>Estilo basado en la pagina de Apple.</li>
+            </ul>
+        </div>
+    </section>
+  </div>
+</Layout>
